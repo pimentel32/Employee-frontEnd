@@ -10,7 +10,7 @@
     "test": "ng test",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://pimentel32.github.io/Employee-frontEnd/",
+  "homepage": "https://pimentel32.github.io/Employee-frontEnd",
   "private": true,
   "dependencies": {
     "@angular/animations": "^12.2.13",
