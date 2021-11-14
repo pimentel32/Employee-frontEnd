@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target": "https://employee-app-test1.herokuapp.com",
+        "secure": true,
+        "logLevel": "debug"
+    }
+}
