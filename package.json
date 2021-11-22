@@ -4,35 +4,35 @@
   "main": "index.js",
   "scripts": {
     "ng": "ng",
+    "heroku-postbuild": "ng build --prod && npm install -g http-server-spa",
     "start": "http-server-spa dist/employee-manager-app index.html $PORT",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "gh-pages -d build",
-    "heroku-postbuild": "ng build --prod && npm install -g http-server-spa"
+    "deploy": "gh-pages -d build"
   },
   "homepage": "https://pimentel32.github.io/Employee-frontEnd",
   "private": true,
   "dependencies": {
-    "@angular/animations": "^13.0.2",
-    "@angular/common": "^13.0.2",
-    "@angular/compiler": "^13.0.2",
-    "@angular/core": "^13.0.2",
-    "@angular/forms": "^13.0.2",
-    "@angular/platform-browser": "^13.0.2",
-    "@angular/platform-browser-dynamic": "^13.0.2",
-    "@angular/router": "^13.0.2",
+    "@angular/animations": "^12.2.13",
+    "@angular/common": "^12.2.13",
+    "@angular/compiler": "^12.2.13",
+    "@angular/core": "^12.2.13",
+    "@angular/forms": "^12.2.13",
+    "@angular/platform-browser": "^12.2.13",
+    "@angular/platform-browser-dynamic": "^12.2.13",
+    "@angular/router": "^12.2.13",
     "enhanced-resolve": "^5.8.3",
     "gh-pages": "^3.2.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
-    "typescript": "~4.4.4",
+    "typescript": "~4.3.5",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^13.0.3",
+    "@angular-devkit/build-angular": "^12.2.13",
     "@angular/cli": "^13.0.3",
-    "@angular/compiler-cli": "^13.0.2",
+    "@angular/compiler-cli": "^12.2.13",
     "@types/jasmine": "~3.8.0",
     "@types/node": "^12.20.37",
     "angular-cli-ghpages": "^1.0.0",
@@ -41,7 +41,8 @@
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
-    "karma-jasmine-html-reporter": "~1.7.0"
+    "karma-jasmine-html-reporter": "~1.7.0",
+    "typescript": "~4.3.5"
   },
   "resolutions": {
     "ansi-html": "https://registry.npmjs.org/ansi-html-community/-/ansi-html-community-0.0.8.tgz"
