@@ -4,12 +4,12 @@
   "main": "index.js",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "http-server-spa dist/employee-manager-app index.html $PORT",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "deploy": "gh-pages -d build",
-    "heroku-postbuild": "ng build --prod"
+    "heroku-postbuild": "ng build --prod && npm install -g http-server-spa"
   },
   "homepage": "https://pimentel32.github.io/Employee-frontEnd",
   "private": true,
