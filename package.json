@@ -8,7 +8,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "heroku-postbuild": "ng build --prod"
   },
   "homepage": "https://pimentel32.github.io/Employee-frontEnd",
   "private": true,
@@ -21,20 +22,22 @@
     "@angular/platform-browser": "^12.2.13",
     "@angular/platform-browser-dynamic": "^12.2.13",
     "@angular/router": "^12.2.13",
+    "enhanced-resolve": "^5.8.3",
     "gh-pages": "^3.2.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
+    "typescript": "~4.3.5",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^12.2.13",
-    "@angular/cli": "^12.2.13",
+    "@angular/cli": "^13.0.3",
     "@angular/compiler-cli": "^12.2.13",
     "@types/jasmine": "~3.8.0",
     "@types/node": "^12.20.37",
-    "angular-cli-ghpages": "^1.0.0-rc.2",
+    "angular-cli-ghpages": "^1.0.0",
     "jasmine-core": "~3.8.0",
-    "karma": "^6.3.8",
+    "karma": "^6.3.9",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
@@ -43,5 +46,9 @@
   },
   "resolutions": {
     "ansi-html": "https://registry.npmjs.org/ansi-html-community/-/ansi-html-community-0.0.8.tgz"
+  },
+  "engines": {
+    "node": "14.15.4",
+    "npm": "6.14.10"
   }
 }
