@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "employeeManagerApp": {
+    "employee-manager-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -72,10 +72,10 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "employeeManagerApp:build:production"
+              "browserTarget": "employee-manager-app:build:production"
             },
             "development": {
-              "browserTarget": "employeeManagerApp:build:development"
+              "browserTarget": "employee-manager-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "employeeManagerApp:build"
+            "browserTarget": "employee-manager-app:build"
           }
         },
         "test": {
@@ -110,5 +110,5 @@
       }
     }
   },
-  "defaultProject": "employeeManagerApp"
+  "defaultProject": "employee-manager-app"
 }
